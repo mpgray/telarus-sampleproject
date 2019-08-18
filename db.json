@@ -1,15 +1,144 @@
 {
-  "posts": [
+  "customer": [
     {
       "id": 1,
-      "title": "hello"
+      "name": "Main Liquid Steel",
+      "contactName": "Garney Mussel",
+      "contactEmail": "mussel818@gmail.com",
+      "order": [
+        {
+          "location": "site 5",
+          "street1": "9425 Lafayette Dr.",
+          "street2": "Suite 235",
+          "city": "Galloway",
+          "state": "OH",
+          "postal": "43119",
+          "services": [
+            {
+              "service": "SIP",
+              "price": 1050.78
+            }
+          ]
+        }
+      ]
     },
     {
       "id": 2,
-      "title": "jellow"
+      "name": "Vernon International",
+      "contactName": "Mikel Aria Woodin",
+      "contactEmail": "mwoodin@vernon.net",
+      "order": [
+        {
+          "location": "Home Base",
+          "street1": "640 Lookout Ave.",
+          "street2": "",
+          "city": "Fleming Island",
+          "state": "FL",
+          "postal": "32003",
+          "services": [
+            {
+              "service": "Ethernet (Copper)",
+              "price": 759.22
+            },
+            {
+              "service": "Hosted VoIP",
+              "price": 12310.91
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Lightfoot",
+      "contactName": "Kamby Terryal Sybang",
+      "contactEmail": "kamby.sybang@lightfoot.com",
+      "order": [
+        {
+          "location": "Wild Horse",
+          "street1": "523 Wild Horse Circle",
+          "street2": "Building 3",
+          "city": "Nazareth",
+          "state": "PA",
+          "postal": "18064",
+          "services": [
+            {
+              "service": "Internet T1",
+              "price": 2473.66
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Ergo Systems",
+      "contactName": "Cash Vicky Tupp",
+      "contactEmail": "cash@ergosys.co",
+      "order": [
+        {
+          "location": "uptown",
+          "street1": "8879 E. Jockey Hollow Lane",
+          "street2": "",
+          "city": "Leesburg",
+          "state": "VA",
+          "postal": "20175-5084",
+          "services": [
+            {
+              "service": "Ethernet (Fiber)",
+              "price": 15944.06
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Ergo Systems",
+      "contactName": "Shardie Krimp",
+      "contactEmail": "shardie@ergosys.co",
+      "order": [
+        {
+          "location": "downtown",
+          "street1": "9194 Cooper Drive",
+          "street2": "",
+          "city": "Fredericksburg",
+          "state": "VA",
+          "postal": "22405",
+          "services": [
+            {
+              "service": "Contact Center",
+              "price": 10982.54
+            },
+            {
+              "service": "Business Cable",
+              "price": 748.98
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Supersonic Industries",
+      "contactName": "Luella Xorba Cross",
+      "contactEmail": "lcross@supersonic.info",
+      "order": [
+        {
+          "location": "Lookout",
+          "street1": "41 Lookout Rd.",
+          "street2": "",
+          "city": "Skokie",
+          "state": "IL",
+          "postal": "60076",
+          "services": [
+            {
+              "service": "Ethernet (Fiber)",
+              "price": 9387.47
+            }
+          ]
+        }
+      ]
     }
-  ],
-  "profile": {
-    "name": "typicode"
-  }
+  ]
 }

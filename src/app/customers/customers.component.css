@@ -4,11 +4,36 @@
   font-size: 16px;
   line-height: 16px;
   color: var(--select-color);
+  position: absolute;
+  top: 40%;
+  margin-left:330px;
+}
+
+.left-arrow{
+  font-size: 28px;
+  line-height: 30px;
+  color: var(--muted-color);
+  font-weight: bolder;
 }
 
 div.customer-card {
+  position: relative;
   width: 350px;
-  box-shadow: 2px 2px 2px 2px var(--accent-color);
+  box-shadow: 1px 1px 1px 1px var(--accent-color);
   background-color: var(--paper-color);
-  padding: 5px 5px 0px;
+  padding: 3px 3px 0px;
+}
+
+div.selected-customer {
+  border-style: solid;
+  border-width: 1px;
+  border-bottom-width: 0px;
+  border-color: var(--select-color);
+  background-color: var(--highlight-color);
+  box-shadow: 1px 1px 1px 1px var(--select-color);
+}
+
+div.no-order{
+  margin-top: 150px;
+  text-align: center;
 }

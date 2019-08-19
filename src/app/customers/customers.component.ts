@@ -12,6 +12,8 @@ export class CustomersComponent implements OnInit {
   customers: ICustomer[];
   customerOrders: ICustomer;
 
+  selectedCustomer: ICustomer;
+
   constructor(private customerService: CustomersService ) { }
 
   ngOnInit() {

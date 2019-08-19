@@ -3,20 +3,25 @@
     <div class="col">
     <h1>Customers</h1>
 
-    <div class="customer-card" *ngFor="let customer of customers" (click)="getOrders(customer)">
-     <div class="container">
-      <h4>{{customer.name}}</h4>
-      <p>
-        {{customer.contactName}}<br/>
-        {{customer.contactEmail}}
-      </p>
-     </div>
-    </div>
+    <div class = "customer-card" *ngFor="let customer of customers"  [class.selected-customer]="customer === selectedCustomer"
+         (click)="getOrders(customer); selectedCustomer = customer">
+      <i class="fas fa-angle-right right-carrot" *ngIf="selectedCustomer === customer"></i>
+        <h4>{{customer.name}}</h4>
+        <p>
+          {{customer.contactName}}<br/>
+          {{customer.contactEmail}}
+        </p>
 
-      <i class="fas fa-angle-right right-carrot"></i>
     </div>
-    <div class="col">
+    </div>
+    <div class="col" *ngIf="customerOrders">
       <app-orders [customerDetails]="customerOrders"></app-orders>
+    </div>
+    <div class="col no-order" *ngIf="!customerOrders">
+      <div class="row">
+        <i class="fas fa-arrow-left left-arrow"></i>
+        <h3> Select a customer<br /> to view orders</h3>
+      </div>
     </div>
   </div>
 </div>

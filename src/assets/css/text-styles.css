@@ -6,21 +6,21 @@ h1{
 }
 
 h2{
-  font-family: 'Georgia', 'Merriweather', 'Arial', serif ;
+  font-family: Georgia, 'Merriweather', Arial, serif ;
   font-size: 28px;
   color: var(--default-color);
   line-height: 32px;
 }
 
 h3 {
-  font-family: 'Georgia', 'Merriweather', 'Arial', serif;
+  font-family: Georgia, 'Merriweather', Arial, serif;
   font-size: 24px;
   color: var(--muted-color);
   line-height: 27px;
 }
 
 h4{
-  font-family: 'Verdana-Bold', 'Quicksand', 'Arial', sans-serif;
+  font-family: Verdana-Bold, 'Quicksand', Arial, sans-serif;
   font-weight: bold;
   font-size: 14px;
   color: var(--default-color);
@@ -28,7 +28,8 @@ h4{
 }
 
 p{
-  font-family: 'Verdana', 'Quicksand', 'Arial', sans-serif;
+  font-family: Verdana, 'Quicksand', Arial, sans-serif;
   font-size: 14px;
   color: var(--default-color);
+  margin-bottom: 5px;
 }

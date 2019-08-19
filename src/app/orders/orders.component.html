@@ -1,7 +1,4 @@
-<div *ngIf="!customerDetails">
-  <i class="fas fa-arrow-left left-arrow"></i>
-  <h3>Select a customer to view orders</h3>
-</div>
+
   <div *ngIf="customerDetails">
     <h1>Orders</h1>
 
@@ -9,12 +6,13 @@
       <div class="container">
         <div class="row">
           <div class="col">
-            <h4>
+            <h3>
               {{customerDetails.name}}
-            </h4>
+            </h3>
           </div>
           <div class="col">
-            <h4><strong>Contact:</strong> {{customerDetails.contactName}}</h4>
+            <h4>Contact: <em>{{customerDetails.contactName}}</em></h4>
+            <p>{{customerDetails.contactEmail}}</p>
           </div>
         </div>
         <hr />
@@ -34,6 +32,7 @@
               </div>
             </div>
           </div>
+          <hr />
           <strong>Services:</strong>
           <div *ngFor="let service of order.services">
             <div class="row" >

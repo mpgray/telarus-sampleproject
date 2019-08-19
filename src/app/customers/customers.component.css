@@ -1,0 +1,14 @@
+@import "../../assets/css/text-styles.css";
+
+.right-carrot{
+  font-size: 16px;
+  line-height: 16px;
+  color: var(--select-color);
+}
+
+div.customer-card {
+  width: 350px;
+  box-shadow: 2px 2px 2px 2px var(--accent-color);
+  background-color: var(--paper-color);
+  padding: 5px 5px 0px;
+}

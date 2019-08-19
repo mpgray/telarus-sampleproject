@@ -1,3 +1,23 @@
-<p>
-  customers works!
-</p>
+<div class="container" style="padding-top: 30px">
+  <div class="row">
+    <div class="col">
+    <h1>Customers</h1>
+
+    <div class="customer-card" *ngFor="let customer of customers" (click)="getOrders(customer)">
+     <div class="container">
+      <h4>{{customer.name}}</h4>
+      <p>
+        {{customer.contactName}}<br/>
+        {{customer.contactEmail}}
+      </p>
+     </div>
+    </div>
+
+      <i class="fas fa-angle-right right-carrot"></i>
+    </div>
+    <div class="col">
+      <app-orders [customerDetails]="customerOrders"></app-orders>
+    </div>
+  </div>
+</div>
+

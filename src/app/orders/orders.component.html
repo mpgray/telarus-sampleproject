@@ -1,3 +1,57 @@
-<p>
-  orders works!
-</p>
+<div *ngIf="!customerDetails">
+  <i class="fas fa-arrow-left left-arrow"></i>
+  <h3>Select a customer to view orders</h3>
+</div>
+  <div *ngIf="customerDetails">
+    <h1>Orders</h1>
+
+    <div class="orders-card">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h4>
+              {{customerDetails.name}}
+            </h4>
+          </div>
+          <div class="col">
+            <h4><strong>Contact:</strong> {{customerDetails.contactName}}</h4>
+          </div>
+        </div>
+        <hr />
+        <div *ngFor="let order of customerDetails.order">
+          <div class="row" >
+            <div class="col" >
+              <p>
+                <strong>Location:</strong> {{order.location}}
+              </p>
+            </div>
+            <div class="col">
+              <div>
+                {{order.street1}} {{order.street2}}
+              </div>
+              <div>
+                {{order.city}}, {{order.state}} {{order.postal}}
+              </div>
+            </div>
+          </div>
+          <strong>Services:</strong>
+          <div *ngFor="let service of order.services">
+            <div class="row" >
+              <div class="col" >
+                {{service.service}}</div>
+              <div class="col" >${{service.price}}</div>
+            </div>
+          </div>
+          <hr />
+
+        </div>
+        <div class="row" >
+          <div class="col" >
+            <h2>Total</h2>
+          </div>
+          <h2>${{total(customerDetails.order)}}</h2>
+        </div>
+      </div>
+
+    </div>
+    </div>

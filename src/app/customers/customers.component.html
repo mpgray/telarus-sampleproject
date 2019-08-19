@@ -2,7 +2,7 @@
   <div class="row">
     <div class="col">
     <h1>Customers</h1>
-
+      <p>&nbsp;</p>
     <div class = "customer-card" *ngFor="let customer of customers"  [class.selected-customer]="customer === selectedCustomer"
          (click)="getOrders(customer); selectedCustomer = customer">
       <i class="fas fa-angle-right right-carrot" *ngIf="selectedCustomer === customer"></i>
